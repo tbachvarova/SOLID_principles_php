@@ -11,6 +11,7 @@
  * This adheres to the Liskov Substitution Principle, as the Square class can be used wherever a Rectangle object is
  * expected, without causing any unexpected behavior or violating the behavior of the Rectangle class.
  *
+ *
  */
 
 class Rectangle

@@ -33,6 +33,15 @@ Let's say we have a class called **PaymentProcessor** that handles payments for 
 > 
 > "Производните класове трябва да могат да заменят своите базови класове изцяло"
 
-[Example: ](lsp.php)
+To satisfy the Liskov Substitution Principle (LSP) in object-oriented programming, the following requirements must be met:
 
-Let's say we have a class hierarchy for shapes (Rectangle, Square, Circle, etc.). The Rectangle class has properties for width and height, while the Square class has a property for sideLength (which is equivalent to both width and height). If we use the Square class in place of a Rectangle object, we should be able to substitute it without any issues. However, if we allow the Square class to set the width and height properties independently (which violates its definition as a square), we violate the LSP. Instead, we can make the Square class inherit from the Rectangle class, but override the setWidth and setHeight methods to ensure that they always set both width and height to the same value.
+* Subtypes must be substitutable for their base types.
+* The behavior of the supertype must not change when a subtype is substituted for it.
+* Any assumptions made about the behavior of the supertype must also hold true for the subtype.
+* Subtypes should only add to the behavior of their supertype, and should not remove or modify any of it.
+* [Pre-conditions cannot be strengthened in a subtype, but they can be weakened.](lsp_pre-conditions.php)
+* Post-conditions cannot be weakened in a subtype, but they can be strengthened.
+
+By meeting these requirements, the LSP ensures that code written against a base class will work correctly when a subclass is used in its place, without requiring any changes to the calling code.
+
+[Example: ](lsp.php)
