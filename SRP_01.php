@@ -8,57 +8,36 @@
  * то се създава отделен CLASS или интерфейс, като се подават обектите за взаимодействие в конструктора.
  * Например ако ни е необходимо да връщаме данни в определен формат (HTML, JSON и др) е по-добре да реализираме интерфейс
  */
-
-class Product
-{
+class User {
     private $name;
-    private $price;
-    private $description;
+    private $email;
+    private $password;
 
-    public function __construct($name, $price, $description)
-    {
+    public function __construct($name, $email, $password) {
         $this->name = $name;
-        $this->price = $price;
-        $this->description = $description;
+        $this->email = $email;
+        $this->password = $password;
     }
 
-    // getters and setters for name, price, and description
+    public function create() {
+        // logic for creating a new user in the database
+    }
 
-    /* This violates the SRP because the class has multiple responsibilities.
+    public function update() {
+        // logic for updating an existing user in the database
+    }
+
+    /* ---- This violates the SRP because the class has multiple responsibilities.
     To apply the SRP, we can separate the responsibilities into separate classes.
 
-    public function saveToDatabase() {
-        // logic for saving the product to the database
+    public function sendEmail() {
+        // logic for sending an email to the user
     }
-
-    public function displayProduct() {
-        // logic for displaying the product on a web page
-    }
-
-    public function deleteFromDatabase() {
-        // logic for deleting the product from the database
-    }
-    */
-
+     * */
 }
 
-class ProductRepository
-{
-    public function saveProduct($product)
-    {
-        // logic for saving the product to the database
-    }
-
-    public function deleteProduct($product)
-    {
-        // logic for deleting the product from the database
-    }
-}
-
-class ProductRenderer
-{
-    public function renderProduct($product)
-    {
-        // logic for displaying the product on a web page
+class EmailSender {
+    public function sendEmail($user) {
+        // logic for sending an email to the user
     }
 }
