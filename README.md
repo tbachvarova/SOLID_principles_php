@@ -1,7 +1,8 @@
-# SOLID with PHP
-Simple example for any S-O-L-I-D with PHP.
 
 [Българска версия](README.bg.md)
+
+# SOLID with PHP
+Simple example for any S-O-L-I-D with PHP.
 
 ## Single Responsibility Principle (SRP)
 
