@@ -1,15 +1,20 @@
 # SOLID with PHP
 Simple example for any S-O-L-I-D with PHP.
 
+[BGGG](README.bg.md)
+
 ## Single Responsibility Principle (SRP)
 
 >"A class should have only one reason to change."
-> 
-> "Даден клас трябва да отговаря само едно нещо"
 
 [Example 1:](SRP_01.php)
 
-Let's say we have a class called **User** that is responsible for creating and updating users. However, this class also handles sending emails to the user after they are created or updated. This violates the SRP because the User class now has two responsibilities. Instead, we can create a separate EmailSender class that handles sending emails, and let the User class focus only on creating and updating users.
+Let's say we have a class called **User** that is responsible for creating and updating users.
+However, this class also handles sending emails to the user after they are created or updated. 
+
+**This violates the SRP** because the User class now has two responsibilities. 
+
+Instead, we can create a separate **EmailSender** class that handles sending emails, and let the **User** class focus only on creating and updating users.
 
 [Example 2:](SRP_02.php) - Product
 
@@ -19,8 +24,6 @@ Let's say we have a class called **User** that is responsible for creating and u
 # Open-Closed (OCP)
 
 > "A class should be open for extension but closed for modification."
-> 
-> "Софтуерните обекти (класове, модули, функции и т.н.) трябва да бъдат отворени за разширение, но затворени за модификация"
 
 [Example:](ocp.php) - PaymentProcessor
 
@@ -30,8 +33,6 @@ Let's say we have a class called **PaymentProcessor** that handles payments for 
 
 ## Liskov Substitution (LSP)
 > “Derived classes must be substitutable for their base classes”
-> 
-> "Производните класове трябва да могат да заменят своите базови класове изцяло"
 
 To satisfy the Liskov Substitution Principle (LSP) in object-oriented programming, the following requirements must be met:
 
@@ -44,4 +45,4 @@ To satisfy the Liskov Substitution Principle (LSP) in object-oriented programmin
 
 By meeting these requirements, the LSP ensures that code written against a base class will work correctly when a subclass is used in its place, without requiring any changes to the calling code.
 
-[Example ](lsp.php) - Rectangle
+[Example ](lsp.php) - Rectangle 
