@@ -1,7 +1,7 @@
 # SOLID with PHP
 Simple example for any S-O-L-I-D with PHP.
 
-[BGGG](README.bg.md)
+[Българска версия](README.bg.md)
 
 ## Single Responsibility Principle (SRP)
 
