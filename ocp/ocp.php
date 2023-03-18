@@ -1,6 +1,16 @@
 <?php
 
-/**
+/** Let's say we have a class called PaymentProcessor that handles payments
+ * for different payment methods (credit card, PayPal, etc.).
+ * However, the class is tightly coupled with specific payment methods,
+ * and adding a new payment method requires modifying the PaymentProcessor class.
+ *
+ * !!! This violates the OCP because the class is not open for extension.
+ *
+ * Instead, we can create an abstract PaymentMethod class and have each specific payment method inherit from it.
+ * Then, the PaymentProcessor class can accept any PaymentMethod object,
+ * without needing to know the details of each specific payment method. *
+ *
  * In this example, the PaymentMethod class is an abstract class that defines a processPayment method.
  * The CreditCardPayment and PayPalPayment classes inherit from the PaymentMethod class and implement their
  * specific payment logic.
