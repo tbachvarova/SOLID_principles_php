@@ -8,14 +8,11 @@ Simple example for any S-O-L-I-D with PHP.
 
 >"A class should have only one reason to change."
 
-[Example 1:](srp/SRP_01.php)
+ It is a design principle in software engineering that suggests that **a class or module should have only one responsibility or reason to change**. In other words, a class should only have one job to do, and it should do it well.
 
-Let's say we have a class called **User** that is responsible for creating and updating users.
-However, this class also handles sending emails to the user after they are created or updated. 
+The idea behind the SRP is to create software components that are easy to understand, test, and maintain. By keeping a class focused on a single responsibility, it is easier to modify, extend, and reuse the code. This can lead to a more flexible and maintainable software architecture.
 
-**This violates the SRP** because the User class now has two responsibilities. 
-
-Instead, we can create a separate **EmailSender** class that handles sending emails, and let the **User** class focus only on creating and updating users.
+[Example 1:](srp/SRP_01.php) - User
 
 [Example 2:](srp/SRP_02.php) - Product
 

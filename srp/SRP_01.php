@@ -1,34 +1,40 @@
 <?php
+
 /**
  * Single Responsibility (srp)
  *
- * „Даден клас трябва да отговаря само едно нещо“
+ * Let's say we have a class called User that is responsible for creating and updating users.
+ * However, this class also handles sending emails to the user after they are created or updated.
  *
- * Ако е необходимо да ползва функционалност различна от неговата основна цел,
- * то се създава отделен CLASS или интерфейс, като се подават обектите за взаимодействие в конструктора.
- * Например ако ни е необходимо да връщаме данни в определен формат (HTML, JSON и др) е по-добре да реализираме интерфейс
+ * This violates the SRP because the User class now has two responsibilities.
+ *
+ * Instead, we can create a separate **EmailSender** class that handles sending emails, and let the **User** class focus only on creating and updating users.
  */
-class User {
-    private $name;
-    private $email;
-    private $password;
+class User
+{
+    private string $name;
+    private string $email;
+    private string $password;
 
-    public function __construct($name, $email, $password) {
+    public function __construct($name, $email, $password)
+    {
         $this->name = $name;
         $this->email = $email;
         $this->password = $password;
     }
 
-    public function create() {
+    public function create()
+    {
         // logic for creating a new user in the database
     }
 
-    public function update() {
+    public function update()
+    {
         // logic for updating an existing user in the database
     }
 
     /* ---- This violates the srp because the class has multiple responsibilities.
-    To apply the srp, we can separate the responsibilities into separate classes.
+    // To apply the srp, we can separate the responsibilities into separate classes.
 
     public function sendEmail() {
         // logic for sending an email to the user
@@ -36,8 +42,10 @@ class User {
      * */
 }
 
-class EmailSender {
-    public function sendEmail($user) {
+class EmailSender
+{
+    public function sendEmail($user)
+    {
         // logic for sending an email to the user
     }
 }
