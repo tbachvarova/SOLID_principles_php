@@ -30,8 +30,6 @@ This is achieved by designing components that are easily replaceable and/or exte
 
 [Example:](ocp/ocp.php) - PaymentProcessor
 
-
-
 [Example 2:](ocp/ocp_2.php) - AreaCalculator (+ ShapeInterface)
 
 ## Liskov Substitution (LSP)
@@ -44,7 +42,7 @@ To satisfy the Liskov Substitution Principle (LSP) in object-oriented programmin
 * Any assumptions made about the behavior of the supertype must also hold true for the subtype.
 * Subtypes should only add to the behavior of their supertype, and should not remove or modify any of it.
 * [Pre-conditions cannot be strengthened in a subtype, but they can be weakened.](lsp/lsp_pre-conditions.php)
-* Post-conditions cannot be weakened in a subtype, but they can be strengthened.
+* [Post-conditions cannot be weakened in a subtype, but they can be strengthened.](lsp/lsp_post-conditions.php)
 
 By meeting these requirements, the LSP ensures that code written against a base class will work correctly when a subclass is used in its place, without requiring any changes to the calling code.
 
