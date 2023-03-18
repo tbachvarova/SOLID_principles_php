@@ -47,3 +47,8 @@ To satisfy the Liskov Substitution Principle (LSP) in object-oriented programmin
 By meeting these requirements, the LSP ensures that code written against a base class will work correctly when a subclass is used in its place, without requiring any changes to the calling code.
 
 [Example ](lsp.php) - Rectangle 
+
+
+......
+
+under construction ...
