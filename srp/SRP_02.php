@@ -16,8 +16,8 @@ class Product
 
     // getters and setters for name, price, and description
 
-    /* This violates the SRP because the class has multiple responsibilities.
-    To apply the SRP, we can separate the responsibilities into separate classes.
+    /* This violates the srp because the class has multiple responsibilities.
+    To apply the srp, we can separate the responsibilities into separate classes.
 
     public function saveToDatabase() {
         // logic for saving the product to the database

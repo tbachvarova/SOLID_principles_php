@@ -9,7 +9,7 @@
  *
  * The UserRegistration class is responsible for registering a new user and sending a welcome email.
  * It takes in objects that implement the UserRepositoryInterface and EmailSenderInterface interfaces as dependencies.
- * This adheres to the SRP, as each class has only one responsibility and each interface defines a single responsibility.
+ * This adheres to the srp, as each class has only one responsibility and each interface defines a single responsibility.
  *
  */
 

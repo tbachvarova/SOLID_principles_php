@@ -1,6 +1,6 @@
 <?php
 /**
- * Single Responsibility (SRP)
+ * Single Responsibility (srp)
  *
  * „Даден клас трябва да отговаря само едно нещо“
  *
@@ -27,8 +27,8 @@ class User {
         // logic for updating an existing user in the database
     }
 
-    /* ---- This violates the SRP because the class has multiple responsibilities.
-    To apply the SRP, we can separate the responsibilities into separate classes.
+    /* ---- This violates the srp because the class has multiple responsibilities.
+    To apply the srp, we can separate the responsibilities into separate classes.
 
     public function sendEmail() {
         // logic for sending an email to the user
