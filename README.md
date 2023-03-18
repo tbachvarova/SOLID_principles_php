@@ -54,6 +54,8 @@ By meeting these requirements, the LSP ensures that code written against a base 
 
 [Example 2 ](lsp2.php) - Bird
 
+[Example 3 ](lsp3.php) - Animal
+
 
 
 ......
