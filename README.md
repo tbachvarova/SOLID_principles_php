@@ -19,7 +19,7 @@ The idea behind the SRP is to create software components that are easy to unders
 [Example 3:](srp/SRP_03.php) - UserRegistration + interfaces
 
 
-# Open-Closed (OCP)
+## Open-Closed (OCP)
 
 > "A class should be open for extension but closed for modification."
 
@@ -28,7 +28,7 @@ It is a design principle in software engineering that suggests that software ent
 The idea behind the OCP is to create software components that can be easily extended without requiring modification of the existing code.
 This is achieved by designing components that are easily replaceable and/or extendable through abstraction and polymorphism, rather than modifying the existing code.
 
-[Example:](ocp/ocp.php) - PaymentProcessor
+[Example 1:](ocp/ocp.php) - PaymentProcessor
 
 [Example 2:](ocp/ocp_2.php) - AreaCalculator (+ ShapeInterface)
 
@@ -51,6 +51,13 @@ By meeting these requirements, the LSP ensures that code written against a base 
 [Example 2 ](lsp/lsp2.php) - Bird
 
 [Example 3 ](lsp/lsp3.php) - Animal
+
+
+## Interface Segregation (ISP)
+> "No code should be forced to depend on methods it does not use"
+
+In other words, **a class should not be forced to implement an interface that it doesn't use.** This principle aims to reduce the coupling between software components and prevent unnecessary dependencies between them. By implementing ISP, software engineers can increase the modularity of their software, making it more flexible, extensible, and maintainable.
+
 
 
 
