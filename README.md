@@ -37,12 +37,30 @@ This is achieved by designing components that are easily replaceable and/or exte
 
 To satisfy the Liskov Substitution Principle (LSP) in object-oriented programming, the following requirements must be met:
 
-* Subtypes must be substitutable for their base types.
-* The behavior of the supertype must not change when a subtype is substituted for it.
-* Any assumptions made about the behavior of the supertype must also hold true for the subtype.
-* Subtypes should only add to the behavior of their supertype, and should not remove or modify any of it.
-* [Pre-conditions cannot be strengthened in a subtype, but they can be weakened.](lsp/lsp_pre-conditions.php)
-* [Post-conditions cannot be weakened in a subtype, but they can be strengthened.](lsp/lsp_post-conditions.php)
+1. Subtypes must be substitutable for their base types.
+
+or "A subtype (a more specific type) must be able to be used in place of its base type (a more general type)."
+
+2. The behavior of the supertype must not change when a subtype is substituted for it.
+
+or " When you use a subtype instead of its base type, it shouldn't change the overall behavior of the program."
+
+3. Any assumptions made about the behavior of the supertype must also hold true for the subtype.
+
+or "Any rules or expectations that apply to the base type should also apply to the subtype."
+
+4. Subtypes should only add to the behavior of their supertype, and should not remove or modify any of it.
+
+or "A subtype can add new behavior, but it shouldn't remove or change any behavior from its base type."
+
+5. [Pre-conditions cannot be strengthened in a subtype, but they can be weakened.](lsp/lsp_pre-conditions.php)
+
+or "A subtype can't make a rule stricter than its base type, but it can make it less strict."
+
+6. [Post-conditions cannot be weakened in a subtype, but they can be strengthened.](lsp/lsp_post-conditions.php)
+
+or "A subtype can't make a guarantee weaker than its base type, but it can make it stronger."
+
 
 By meeting these requirements, the LSP ensures that code written against a base class will work correctly when a subclass is used in its place, without requiring any changes to the calling code.
 
