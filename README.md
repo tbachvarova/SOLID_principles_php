@@ -67,9 +67,8 @@ In other words, **a class should not be forced to implement an interface that it
 
 This means that instead of depending on concrete implementations, classes and functions **should depend on interfaces or abstract classes**. By doing so, the code becomes more modular, easier to test, and less coupled, which makes it easier to modify and maintain over time.
 
+[Example 1 ](dip/dip1.php) - Engine
 
+[Еxample follows all five SOLID principles 1](fullSolid.php) - PaymentService
+[Еxample follows all five SOLID principles 2](fullSolid2.php) - ShoppingCart
 
-
-......
-
-under construction ...
