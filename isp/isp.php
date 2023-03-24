@@ -99,14 +99,14 @@ class Boat implements Vehicle {
 
 /*
 In this example, the Vehicle interface defines two methods called fly() and sail().
-However, these methods are only relevant to airplanes or to sailing objects and not to cars.
+However, these methods are only relevant to airplanes or sailing objects, not cars.
 Therefore, any class is forced to implement a method that it does not need, which violates the ISP principle
 - Car class - can't fly() or sail()
 - Airplane class - can't sail()
 - Boat class - can't fly()
 
 To fix this, we should separate the Vehicle interface into three separate interfaces:
- one for land vehicles, another for air and sailing vehicles.
+ for land vehicles, for air and sailing vehicles.
 
  Here's an updated example:
 */
