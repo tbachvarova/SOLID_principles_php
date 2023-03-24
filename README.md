@@ -69,6 +69,8 @@ This means that instead of depending on concrete implementations, classes and fu
 
 [Example 1 ](dip/dip1.php) - Engine
 
-[Еxample follows all five SOLID principles 1](fullSolid.php) - PaymentService
-[Еxample follows all five SOLID principles 2](fullSolid2.php) - ShoppingCart
+
+> 
+* [Еxample follows all five SOLID principles 1](fullSolid.php) - PaymentService
+* [Еxample follows all five SOLID principles 2](fullSolid2.php) - ShoppingCart
 
