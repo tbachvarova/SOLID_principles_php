@@ -19,7 +19,7 @@ The idea behind the SRP is to create software components that are easy to unders
 [Example 3:](srp/SRP_03.php) - UserRegistration + interfaces
 
 
-## Open-Closed (OCP)
+## Open-Closed Principle (OCP)
 
 > "A class should be open for extension but closed for modification."
 
@@ -32,7 +32,7 @@ This is achieved by designing components that are easily replaceable and/or exte
 
 [Example 2:](ocp/ocp_2.php) - AreaCalculator (+ ShapeInterface)
 
-## Liskov Substitution (LSP)
+## Liskov Substitution Principle (LSP)
 > “Derived classes must be substitutable for their base classes”
 
 To satisfy the Liskov Substitution Principle (LSP) in object-oriented programming, the following requirements must be met:
@@ -53,13 +53,22 @@ By meeting these requirements, the LSP ensures that code written against a base 
 [Example 3 ](lsp/lsp3.php) - Animal
 
 
-## Interface Segregation (ISP)
+## Interface Segregation Principle (ISP)
 > "No code should be forced to depend on methods it **does not** use"
 
 In other words, **a class should not be forced to implement an interface that it doesn't use.** This principle aims to reduce the coupling between software components and prevent unnecessary dependencies between them. By implementing ISP, software engineers can increase the modularity of their software, making it more flexible, extensible, and maintainable.
 
 
 [Example 1 ](isp/isp.php) - Vehicle
+
+## Dependency Inversion Principle (DIP)
+> "High-level modules should not depend on low-level modules, 
+> but rather both should depend on abstractions"
+
+This means that instead of depending on concrete implementations, classes and functions **should depend on interfaces or abstract classes**. By doing so, the code becomes more modular, easier to test, and less coupled, which makes it easier to modify and maintain over time.
+
+
+
 
 ......
 
