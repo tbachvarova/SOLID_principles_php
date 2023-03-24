@@ -54,12 +54,12 @@ By meeting these requirements, the LSP ensures that code written against a base 
 
 
 ## Interface Segregation (ISP)
-> "No code should be forced to depend on methods it does not use"
+> "No code should be forced to depend on methods it **does not** use"
 
 In other words, **a class should not be forced to implement an interface that it doesn't use.** This principle aims to reduce the coupling between software components and prevent unnecessary dependencies between them. By implementing ISP, software engineers can increase the modularity of their software, making it more flexible, extensible, and maintainable.
 
 
-
+[Example 1 ](isp/isp.php) - Vehicle
 
 ......
 
